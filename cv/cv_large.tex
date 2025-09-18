@@ -1,0 +1,143 @@
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage[margin=2.5cm]{geometry} % Slightly larger margins
+\usepackage{hyperref} % For links
+\usepackage{enumitem} % For lists
+\usepackage{fontawesome5} % For icons
+\usepackage{parskip} % Removes indentation and adds spacing between paragraphs
+\usepackage{titlesec} % For section formatting
+\usepackage{charter} % Font
+\usepackage{graphicx} % For picture
+
+% Section formatting
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{-2pt}\rule{\linewidth}{0.4pt}]
+\titlespacing{\section}{0pt}{0.2cm}{0.15cm}
+
+% Line spacing
+\renewcommand{\baselinestretch}{1.1}
+
+% List formatting
+\ifdefined\HCode
+%HTML mode ---
+\newenvironment{highlights}{\begin{itemize}}{\end{itemize}}
+\else
+%LaTeX/PDF mode ---
+\newlist{highlights}{itemize}{1}
+\setlist[highlights]{label=\textbullet, left=0pt, itemsep=0.2cm, topsep=0.2cm}
+\fi
+
+% Header
+\newcommand{\header}[2]{
+    \begin{minipage}{0.75\textwidth}
+    #1
+    \end{minipage}\hfill
+    \begin{minipage}{0.2\textwidth}
+    \includegraphics[width=\linewidth]{../images/profile_800x800.jpg} % Replace with profile.jpg
+    \end{minipage}
+    \vspace{0.6cm}
+}
+
+\begin{document}
+
+% ===== Header =====
+    \header{
+            {\LARGE \textbf{Kiran De Roy}} \\[6pt]
+        Betekom \textbullet\
+        \href{mailto:kiran@litrik.com}{kiran@litrik.com} \textbullet\
+        \href{tel:+32487589298}{+32 487 58 92 98} \textbullet\
+        \href{https://linkedin.com/in/kiran-de-roy}{\faLinkedin\ LinkedIn} \textbullet\
+        17/06/2002
+
+    }{kiran_portrait_square_80_res.jpg}
+
+% ===== Education =====
+    \section{Education}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \textbf{KU Leuven: Group T} & Sept 2024, June 2025 \\
+    \end{tabular*}
+    MSc in Electronics-ICT: Software Systems
+    \begin{highlights}
+        \item Coursework: C++, Machine Learning, Cybersecurity, Distributed Systems
+    \end{highlights}
+
+    \vspace{0.3cm}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \textbf{KU Leuven: Group T} & Sept 2020, Feb 2025 \\
+    \end{tabular*}
+    BSc in Electronics-ICT: Smart Electronics and Software
+    \begin{highlights}
+        \item Coursework: Operating Systems, Object-Oriented Programming, Web Development
+    \end{highlights}
+
+    \vspace{0.3cm}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \textbf{KAMSA Aarschot} & Sept 2014, June 2020 \\
+    \end{tabular*}
+    Science and Mathematics
+
+% ===== Research =====
+    \section{Research}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \textbf{Master's Thesis – Real-Time Pelvic Rotation Detection Using Machine Learning} & Sept 2024, June 2025 \\
+    \end{tabular*}
+
+    \vspace{.2cm}
+    Developed machine learning models for real-time pelvic rotation detection to address lower back pain, achieving 95\% weighted F1-score using MS-TCN++ temporal model on IMU sensor data.
+
+    \textbf{Technologies:} Python, Scikit-learn, Pandas, NumPy, Tensorflow, PyTorch, CUDA
+
+% ===== Skills =====
+    \section{Skills}
+    \textbf{Languages:} Java, C++, C, Python, SQL \\
+    \textbf{Tools/Frameworks:} Symfony, Git, React, Firebase, QTCreator, Intellij, Figma, Ubuntu \\
+    \textbf{Languages:} Dutch (native), English (fluent)
+
+% ===== Projects =====
+    \section{Projects}
+
+    \textbf{Automatic Chessboard with Lichess Integration} \hfill \href{https://github.com/Yornared/ESP32_Chessboard_code}{\faGithub\ Source Code}
+    \begin{highlights}
+        \item Built an automatic chessboard powered by ESP32-S3 using CoreXY mechanism and electromagnets
+        \item Integrated with Lichess API via React web app
+        \item Tools: ESP-IDF (C), React, Stepper Motor Drivers, CoreXY Kinematics
+        \item Awarded \textbf{Best Student Project 2024}
+    \end{highlights}
+
+    \vspace{0.3cm}
+
+    \textbf{Student Freelancing SaaS Application: UniGigs} \hfill \href{https://github.com/Yornared/FreelanceApp}{\faGithub\ Source Code}
+    \begin{highlights}
+        \item SaaS web app for students to offer and find freelance gigs
+        \item Authentication, file storage via Firebase, payments via Stripe
+        \item Tools: React, TypeScript, Firebase
+        \item Awarded \textbf{Most Technically Advanced SaaS Application 2025}
+    \end{highlights}
+
+    \vspace{0.3cm}
+
+    \textbf{Distributed Food Ordering System} \hfill \href{https://github.com/Yornared/Food-ordering-webshop}{\faGithub\ Source Code}
+    \begin{highlights}
+        \item Microservices-based food ordering platform with 2PC transactions
+        \item Designed REST APIs, monitoring services, deployed to Azure
+        \item Tools: Java, Spring Boot, REST APIs, Maven, Azure, GitHub Actions
+    \end{highlights}
+
+    \vspace{.5cm}
+    Check out my \href{yornared.github.io}{\textbf{website}} for videos, screenshots and a comprehensive list of other completed projects.
+
+% ===== Other Experience =====
+    \section{Other Experience}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        \textbf{Student Job, Delhaize} & July 2019, July 2021 \\
+    \end{tabular*}
+    \begin{highlights}
+        \item Operated the cash register
+        \item Restocked shelves
+    \end{highlights}
+
+\end{document}
