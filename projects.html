@@ -56,6 +56,8 @@
 
 <main>
 
+    <!--    Chessboard-->
+
     <div class="container px-4 py-5" id="overview">
         <h2 class="pb-2 border-bottom">Projects</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -191,6 +193,8 @@
             </div>
         </div>
     </div>
+
+    <!--    SaaS Unigigs-->
 
 
     <div class="container my-5" id="unigigs">
@@ -332,6 +336,114 @@
 
     </div>
 
+    <!--    Thesis-->
+
+    <div class="container my-5" id="ml">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis">Master’s Thesis: ML-based Pelvic Rotation Recognition</h1>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+
+                <div id="carouselThesis" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/thesis/thesis4.png" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/thesis/thesis3.png" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/thesis/thesis2.png" class="d-block w-100" alt="...">
+
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/thesis/thesis1.png" class="d-block w-100" alt="...">
+
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselThesis"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselThesis"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p class="lead">
+                    Adaption of the state-of-the-art MS-TCN++ deeplearning model, trained on IMU pelvic data used to
+                    detect human activities with a focus on pelvic rotation.
+                </p>
+
+            </div>
+            <div class="col-12 col-lg-6">
+
+
+                <h4>Problem</h4>
+                <p>
+                    Low back pain affects over 600 million people worldwide. Monitoring pelvic movement in daily life
+                    could
+                    provide early detection and prevention, but requires lightweight and reliable methods.
+                </p>
+
+                <h4>Approach</h4>
+                <dl>
+                    <dt>Data</dt>
+                    <dd>Collected IMU data from 39 subjects using the Xsens motion capture system.</dd>
+
+                    <dt>Models</dt>
+                    <dd>Trained both window-based models (XGBoost, LSTM) and a temporal segmentation model (MS-TCN++).
+                    </dd>
+
+                    <dt>Development Tools</dt>
+                    <dd>Pycharm, Jupyter Notebook, Tensorflow, Pytorch, seaborn/matplotlib, numpy/pandas</dd>
+                </dl>
+
+                <h4>My Contributions</h4>
+                <ul>
+                    <li>Data preprocessing and experimental pipeline design.</li>
+                    <li>Implementation and training of ML models.</li>
+                    <li>Result analysis and interpretation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="d-flex justify-content-between mt-4">
+                <a href="https://kuleuven.limo.libis.be/discovery/fulldisplay?docid=alma9995771855201488&context=L&vid=32KUL_KUL:KULeuven&search_scope=All_Content&tab=all_content_tab&lang=en"
+                   target="_blank" class="btn btn-link icon-link">
+                    <img src="images/thesis/kul_logo.png" alt="KU Leuven" style="height: 1.25rem; width: auto;"> View
+                    thesis text
+                </a>
+                <a class="btn btn-outline-secondary" href="#overview" role="button">Back to top</a>
+            </div>
+        </div>
+    </div>
+
+    <!--    Distributed ordering system-->
+
     <div class="container my-5" id="food-shop">
         <div class="p-5 text-center bg-body-tertiary rounded-3">
             <h1 class="text-body-emphasis">Distributed Food Ordering System</h1>
@@ -439,6 +551,8 @@
         </div>
 
     </div>
+
+    <!--    C++ Game-->
 
     <div class="container my-5" id="game">
         <div class="p-5 text-center bg-body-tertiary rounded-3">
@@ -575,108 +689,6 @@
             <div class="d-flex justify-content-between mt-4">
                 <a href="https://github.com/Yornared/APT_game" target="_blank" class="btn btn-link icon-link">
                     <i class="bi bi-github"></i> View on GitHub
-                </a>
-                <a class="btn btn-outline-secondary" href="#overview" role="button">Back to top</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-5" id="ml">
-        <div class="p-5 text-center bg-body-tertiary rounded-3">
-            <h1 class="text-body-emphasis">Master’s Thesis: ML-based Pelvic Rotation Recognition</h1>
-
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-
-                <div id="carouselThesis" class="carousel slide mb-4" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselThesis" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/thesis/thesis4.png" class="d-block w-100" alt="...">
-
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/thesis/thesis3.png" class="d-block w-100" alt="...">
-
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/thesis/thesis2.png" class="d-block w-100" alt="...">
-
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="images/thesis/thesis1.png" class="d-block w-100" alt="...">
-
-                        </div>
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselThesis"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselThesis"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <p class="lead">
-                    Adaption of the state-of-the-art MS-TCN++ deeplearning model, trained on IMU pelvic data used to
-                    detect human activities with a focus on pelvic rotation.
-                </p>
-
-            </div>
-            <div class="col-12 col-lg-6">
-
-
-                <h4>Problem</h4>
-                <p>
-                    Low back pain affects over 600 million people worldwide. Monitoring pelvic movement in daily life
-                    could
-                    provide early detection and prevention, but requires lightweight and reliable methods.
-                </p>
-
-                <h4>Approach</h4>
-                <dl>
-                    <dt>Data</dt>
-                    <dd>Collected IMU data from 39 subjects using the Xsens motion capture system.</dd>
-
-                    <dt>Models</dt>
-                    <dd>Trained both window-based models (XGBoost, LSTM) and a temporal segmentation model (MS-TCN++).
-                    </dd>
-
-                    <dt>Development Tools</dt>
-                    <dd>Pycharm, Jupyter Notebook, Tensorflow, Pytorch, seaborn/matplotlib, numpy/pandas</dd>
-                </dl>
-
-                <h4>My Contributions</h4>
-                <ul>
-                    <li>Data preprocessing and experimental pipeline design.</li>
-                    <li>Implementation and training of ML models.</li>
-                    <li>Result analysis and interpretation.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="d-flex justify-content-between mt-4">
-                <a href="https://kuleuven.limo.libis.be/discovery/fulldisplay?docid=alma9995771855201488&context=L&vid=32KUL_KUL:KULeuven&search_scope=All_Content&tab=all_content_tab&lang=en" target="_blank" class="btn btn-link icon-link">
-                    <img src="images/thesis/kul_logo.png" alt="KU Leuven" style="height: 1.25rem; width: auto;"> View thesis text
                 </a>
                 <a class="btn btn-outline-secondary" href="#overview" role="button">Back to top</a>
             </div>
